@@ -15,7 +15,7 @@
                 
             <!--  should popup modal -->
             <!-- modal should toggle between join up form -->
-            <button class="signIn-button">Sign In</button>
+            <button onclick="return openSighnIn()" class="signIn-button">Sign In</button>
                 
             <a href="#">About_Us</a>
             <a class="active" href="#">Home</a>
@@ -24,6 +24,22 @@
 
         <!-- This is the body content -->
         <div class="body-content">
+            <div class="myModal" id="mymodal">
+                    <div class="modal-content">
+                        <span>&times;</span>
+                        
+                        <label for="username">UserName: </label>
+                        <input type="text"/> <br>
+                        <label for="password">Password: </label>
+                        <input type="text"/><br><br>
+                        
+                        <input type="submit" value="Log In"/>
+                        <hr>
+                        <!-- toggle span for sighn up -->
+                        
+                
+                </div>
+            </div>
             <h1>Hobbies 4 Us</h1>
             
             <!-- brief overview -->
