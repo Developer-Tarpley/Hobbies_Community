@@ -1,0 +1,44 @@
+.main-navbar{
+    background-color: rgb(3, 65, 83);
+    overflow: auto;
+}
+
+a{
+    float: right;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px 16px;
+    color: rgb(219, 113, 219);
+}
+a:hover{
+    color: lightgray;
+    text-decoration: underline rgb(219, 113, 219) ;
+}
+
+.signIn-button{
+    float: right;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    padding: 14px 16px;
+    color: rgb(219, 113, 219);
+    background-color: inherit;
+}
+.signIn-button:hover{
+    color: lightgray;
+    font-size: 20px;
+}
+
+.logo{
+    float: left;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 14px 16px;
+    color: rgb(219, 113, 219);
+}
+
+.active{
+    text-decoration: underline rgb(219, 113, 219) ;
+    color: #fff;
+}
