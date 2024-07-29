@@ -1,63 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="./Styles/style.css"/>
-        <title>Hobbies 4 Us</title>
-    </head>
 
-    <body>
-        <!-- This is the Landing Page -->
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./Styles/style.css" />
+    <title>Hobbies 4 Us</title>
+</head>
 
-        <nav class="main-navbar">
-            <!-- logo goes here -->
-            <span class="logo">Hobbies 4 Us</span>
-                
-            <!--  should popup modal -->
-            <!-- modal should toggle between join up form -->
-            <button onclick="return openSighnIn()" class="signIn-button">Sign In</button>
-                
-            <a href="#">About_Us</a>
-            <a class="active" href="#">Home</a>
-             
-        </nav>
+<body>
+    <!-- This is the Landing Page -->
 
-        <!-- This is the body content -->
-        <div class="body-content">
-            <div class="myModal" id="mymodal">
-                    <div class="modal-content">
-                        <span>&times;</span>
-                        
-                        <label for="username">UserName: </label>
-                        <input type="text"/> <br>
-                        <label for="password">Password: </label>
-                        <input type="text"/><br><br>
-                        
-                        <input type="submit" value="Log In"/>
-                        <hr>
-                        <!-- toggle span for sighn up -->
-                        
-                
-                </div>
-            </div>
-            <h1>Hobbies 4 Us</h1>
-            
-            <!-- brief overview -->
+    <nav class="main-navbar">
+        <!-- logo goes here -->
+        <span class="logo">Hobbies 4 Us</span>
+
+        <!--  should popup modal -->
+        <!-- modal should toggle between join up form -->
+        <button onclick="return openSighnIn()" class="signIn-button">Sign In</button>
+
+        <a href="#">About_Us</a>
+        <a class="active" href="#">Home</a>
+
+    </nav>
+
+    <!-- This is the modal content -->
+    <div class="myModal" id="mymodal">
+        <div class="modal-content">
+            <span>&times;</span>
+
+            <label for="username">UserName: </label>
+            <input type="text" /> <br>
+            <label for="password">Password: </label>
+            <input type="text" /><br><br>
+
+            <input type="submit" value="Log In" />
+            <hr>
+            <!-- toggle span for sighn up -->
+
+
+        </div>
+    </div>
+
+    <!-- This is the body content -->
+    <div class="body-content">
+        <h1>Hobbies 4 Us</h1>
+        <!-- <hr> -->
+        <div class="content-container">
+
 
 
             <!-- image of a hobby -->
+            <div class="hobby-image-div">
+                <img src="./assets/hobby.jpg" alt="a picture of hobbies">
+            </div>
+
+            <!-- brief overview -->
+            <div class="landPage-overview">
+
+                <p >
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto mollitia perspiciatis eius facilis
+                    deserunt exercitationem, quaerat, odio enim quos accusamus et nihil ex cum numquam minus reiciendis
+                    illo
+                    quam asperiores. Suscipit, assumenda. Dolor necessitatibus, ab delectus maiores laudantium,
+                    voluptatibus
+                    voluptate deserunt quam quasi repudiandae, molestiae omnis modi blanditiis porro fugit.
+                </p>
+            </div>
             <!-- more images that zig-zag -->
+            <div class="zig-zag-pics">
+
+                <div class="chess-pic">
+                    <img src="./assets/chess.jpg" alt="chess board">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quia modi autem, atque eveniet,
+                        placeat voluptate error ipsa quibusdam laborum quasi eaque vel voluptas ullam?</p>
+                </div>
+                <div class="painting-pic">
+                    <img src="./assets/painting.jpg" alt="painting hobby">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, laboriosam!</p>
+                </div>
+                <div class="model-plane-pic">
+                    <img src="./assets/plane.jpg" alt="model plane">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptate rerum eius?</p>
+                </div>
+            </div>
 
 
             <!-- Join hobbyist community button -->
-             <!-- image goes her too -->
+            <!-- image goes her too -->
+            <div class="signUp-button-div">
+                <span>Join</span>
+                <button class="signUp-button" onclick="return openSignUp()">Join Hobbyist Community</button>
+                <span>Here!</span>
+            </div>
         </div>
+    </div>
+    <!-- this is the footer -->
+     <footer class="landing-footer">&copy 2024, Hobbies 4 Us published by Corey Tarpley</footer>
 
-        <!-- this is the footer -->
 
 
-        
-        <script src="./JavaScript/scripts.js"></script>
-    </body>
+    <script src="./JavaScript/scripts.js"></script>
+</body>
 
 </html>
