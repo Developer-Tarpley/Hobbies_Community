@@ -26,18 +26,27 @@
     <!-- This is the modal content -->
     <div class="myModal" id="mymodal">
         <div class="modal-content">
-            <span>&times;</span>
+            <div class="modal-section1">
+                <span>Please Log In</span>
+                <span class="close-button" onclick="return closeJoinModal()">&times;</span>
+            </div>
 
-            <label for="username">UserName: </label>
-            <input type="text" /> <br>
-            <label for="password">Password: </label>
-            <input type="text" /><br><br>
+            <!-- <hr> -->
 
-            <input type="submit" value="Log In" />
-            <hr>
-            <!-- toggle span for sighn up -->
+            <div class="modal-section2">
+                <label for="username">UserName: </label>
+                <input type="text" /> <br>
+                <label for="password">Password: </label>
+                <input type="password" /><br><br>
 
-
+                <button type="submit">LOG IN</button>
+            </div>
+            <!-- <hr> -->
+            <!-- button span for sighn up page -->
+            <div class="not-member-div">
+                <a href="./Templates/signup.html"><span>not a member</span></a>
+                <a href="#"><span>forgot password</span></a>
+            </div>
         </div>
     </div>
 
@@ -57,7 +66,7 @@
             <!-- brief overview -->
             <div class="landPage-overview">
 
-                <p >
+                <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto mollitia perspiciatis eius facilis
                     deserunt exercitationem, quaerat, odio enim quos accusamus et nihil ex cum numquam minus reiciendis
                     illo
@@ -95,7 +104,7 @@
         </div>
     </div>
     <!-- this is the footer -->
-     <footer class="landing-footer">&copy 2024, Hobbies 4 Us published by Corey Tarpley</footer>
+    <footer class="landing-footer">&copy 2024, Hobbies 4 Us published by Corey Tarpley</footer>
 
 
 
